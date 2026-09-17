@@ -14,9 +14,13 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="先生成一张夏日阳光下的虚构鼠尾草绿陶瓷手冲咖啡套装照片，再把同一张图编辑成下雪的冬夜灯光场景，器具和摆放位置保持不变。由 Beatra AI 生成。"></p>
+
+*先生成一张夏日阳光下的虚构鼠尾草绿陶瓷手冲咖啡套装照片，再把同一张图编辑成下雪的冬夜灯光场景，器具和摆放位置保持不变。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.3 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.4 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio) 自动发布，问题请到那里反馈。
 
@@ -40,6 +44,18 @@ gh skill install beatra-ai/ai-image-generator-skill ai-image-generation-studio
 
 ```text
 从 https://github.com/beatra-ai/ai-image-generator-skill 安装 ai-image-generation-studio skill（目录 skills/ai-image-generation-studio），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 效果示例
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="把生成的手冲套装作为参考图，重新构图成一张亚麻桌布上的方形俯拍平铺图，搭配咖啡豆、滤纸和黄铜量勺。由 Beatra AI 生成。"></p>
+
+*把生成的手冲套装作为参考图，重新构图成一张亚麻桌布上的方形俯拍平铺图，搭配咖啡豆、滤纸和黄铜量勺。由 Beatra AI 生成。*
+
+提示词：
+
+```text
+New composition for a square social media post. Image 1 is the product reference: the sage-green ceramic pour-over dripper, the glass carafe, the sage-green mug and the speckled cream sugar bowl. Keep their shapes, glaze colors, speckled texture and proportions recognizable. Arrange them as a top-down overhead flat lay on a textured natural linen tablecloth: the dripper lying beside the carafe, the mug filled with black coffee seen from directly above, the sugar bowl, a small scattered line of whole coffee beans, a folded unbleached paper filter, and a brass coffee scoop. Soft even daylight from the upper left with gentle short shadows, calm balanced spacing between objects with breathing room around the edges, muted sage, cream, linen and warm brown palette, photoreal editorial product photography. No people, no hands, no text, no logos, no labels, no watermarks.
 ```
 
 ## 你能得到什么

@@ -14,9 +14,13 @@ Generate, compose, and edit product images, brand visuals, posters, social graph
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="A sunlit summer photo of a fictional sage-green ceramic pour-over coffee set, then the same image edited into a snowy winter evening with lamplight while the set and its layout stay in place. AI-generated with Beatra."></p>
+
+*A sunlit summer photo of a fictional sage-green ceramic pour-over coffee set, then the same image edited into a snowy winter evening with lamplight while the set and its layout stay in place. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.3 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.4 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio). Report issues there.
 
@@ -41,6 +45,18 @@ Or paste this into your agent:
 
 ```text
 Install the ai-image-generation-studio skill from https://github.com/beatra-ai/ai-image-generator-skill (folder skills/ai-image-generation-studio), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="The generated pour-over set used as a reference for a new composition: a square overhead flat lay on linen with beans, a paper filter and a brass scoop. AI-generated with Beatra."></p>
+
+*The generated pour-over set used as a reference for a new composition: a square overhead flat lay on linen with beans, a paper filter and a brass scoop. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+New composition for a square social media post. Image 1 is the product reference: the sage-green ceramic pour-over dripper, the glass carafe, the sage-green mug and the speckled cream sugar bowl. Keep their shapes, glaze colors, speckled texture and proportions recognizable. Arrange them as a top-down overhead flat lay on a textured natural linen tablecloth: the dripper lying beside the carafe, the mug filled with black coffee seen from directly above, the sugar bowl, a small scattered line of whole coffee beans, a folded unbleached paper filter, and a brass coffee scoop. Soft even daylight from the upper left with gentle short shadows, calm balanced spacing between objects with breathing room around the edges, muted sage, cream, linen and warm brown palette, photoreal editorial product photography. No people, no hands, no text, no logos, no labels, no watermarks.
 ```
 
 ## What you get
