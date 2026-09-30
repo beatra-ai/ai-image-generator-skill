@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.4 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.7 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio) 自动发布，问题请到那里反馈。
 
@@ -68,7 +68,7 @@ New composition for a square social media post. Image 1 is the product reference
 
 - **制作产品图** — 把已有产品放进新场景，或生成新的产品概念图，再检查外形、颜色、标签与发布场景。
 - **制作广告与品牌视觉** — 围绕一条信息、一个配色方案和目标受众，制作广告图或品牌视觉草稿。
-- **制作社交媒体配图与海报** — 根据渠道、画面方向、安全留白和信息，规划一张图。
+- **制作社交媒体配图与海报** — 根据发布渠道、横竖方向、文字要放的位置和想传达的信息，规划一张图。
 - **创作插画与概念图** — 用明确的视觉风格探索插画、封面、场景或概念图。
 - **修改照片或背景** — 以已有图像为原图，把修改重点放在指定的物体、区域、背景或整体效果上，并检查整张结果。
 - **用参考图创作新图** — 按顺序使用产品、主体、风格或场景参考图来创作新图，再检查哪些特征被保留下来。

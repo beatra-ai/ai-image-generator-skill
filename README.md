@@ -20,7 +20,7 @@ Generate, compose, and edit product images, brand visuals, posters, social graph
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.4 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.7 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio). Report issues there.
 
@@ -69,7 +69,7 @@ New composition for a square social media post. Image 1 is the product reference
 
 - **Create product images** — Place a supplied product into a new scene or generate a new product concept, then check shape, color, label, and destination fit.
 - **Build ad and brand visuals** — Turn one message, palette, and audience into a campaign image or brand-led visual draft.
-- **Make social graphics and posters** — Plan one image around the chosen channel, orientation, safe space, and message.
+- **Make social graphics and posters** — Plan one image around the channel, orientation, room for text, and message.
 - **Develop illustrations and concepts** — Explore a named visual style for an illustration, cover, scene, or concept image.
 - **Change a photo or background** — Use an existing image as the base and focus the requested change on an object, region, background, or overall treatment, then inspect the whole result.
 - **Compose from reference images** — Use ordered product, subject, style, or scene references to guide a new image, then check what carried through.
