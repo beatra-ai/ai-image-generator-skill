@@ -20,7 +20,7 @@ Generate, compose, and edit product images, brand visuals, posters, social graph
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.1.7 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.2.1 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio). Report issues there.
 
@@ -96,12 +96,12 @@ It matches the image goal, reference materials, canvas, output count, and creati
 
 It reuses the selected direction, wording, reference images, subject cues, style, logo placement, and text plan across the series, then reviews each result for visual consistency.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update ai-image-generation-studio` or `gh skill update ai-image-generation-studio`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
