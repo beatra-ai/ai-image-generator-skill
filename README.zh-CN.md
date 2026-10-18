@@ -2,7 +2,7 @@
 
 [English](./README.md) | 简体中文
 
-生成、合成并编辑产品图、品牌视觉、海报、社交媒体配图、插画和照片的不同版本，在 Claude Code、Codex 或 OpenClaw 里直接完成。
+生成、合成并编辑产品图、品牌视觉、海报、社交媒体配图、插画和照片的不同版本，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
 > [!IMPORTANT]
 > 生成需要 [Beatra](https://beatra.ai) 账号并消耗积分，安装本身不收费。
@@ -10,9 +10,10 @@
 | 问题 | 回答 |
 | --- | --- |
 | **能做什么** | 生成、合成并编辑产品图、品牌视觉、海报、社交媒体配图、插画和照片的不同版本。 |
+| **底层模型** | Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5 |
 | **运行要求** | Python 3.10+，以及能加载 `SKILL.md` 的 Agent |
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
-| **支持的 Agent** | Claude Code、Codex、OpenClaw |
+| **支持的 Agent** | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw |
 
 <p align="center"><img src="assets/hero.webp" width="800" alt="先生成一张夏日阳光下的虚构鼠尾草绿陶瓷手冲咖啡套装照片，再把同一张图编辑成下雪的冬夜灯光场景，器具和摆放位置保持不变。由 Beatra AI 生成。"></p>
 
@@ -20,7 +21,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.2.2 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.2.3 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio) 自动发布，问题请到那里反馈。
 
@@ -38,7 +39,7 @@ npx skills add beatra-ai/ai-image-generator-skill
 gh skill install beatra-ai/ai-image-generator-skill ai-image-generation-studio
 ```
 
-也可以克隆本仓库，把 `skills/ai-image-generation-studio` 复制到 `~/.claude/skills/`（Claude Code）、`~/.agents/skills/`（Codex）或 `~/.openclaw/skills/`（OpenClaw）。
+也可以克隆本仓库，把 `skills/ai-image-generation-studio` 复制到 `~/.claude/skills/`（Claude Code）、`~/.cursor/skills/`（Cursor）、`~/.agents/skills/`（Codex）、`~/.codeium/windsurf/skills/`（Windsurf）、`~/.cline/skills/`（Cline）或 `~/.openclaw/skills/`（OpenClaw）。
 
 或者把下面这段话发给你的 Agent：
 
@@ -60,7 +61,7 @@ New composition for a square social media post. Image 1 is the product reference
 
 ## 技术规格与输出限制
 
-截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
+截至 2026-10-18。实时列表：https://docs.beatra.ai/zh/docs/models
 
 - **上传** — 单个文件最大 100 MB；同时适用下方各模型的输入限制
 - **文生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）；PNG；单次最多 4 张；画布最大 16.8 MP
@@ -71,31 +72,31 @@ New composition for a square social media post. Image 1 is the product reference
 - **图片编辑** — 6 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro）；PNG；单次最多 4 张；画布最大 4.2 MP
   - 4.2 MP（2K 档）：Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro（单次最多 4 张）
   - 输入图片：单次最多 4 张，每张 10–20 MB；BMP、GIF、JPEG、PNG、TIFF、WEBP
-- **图生视频** — 9 个模型（wan2.7-i2v、wan3.0-video、minimax-h3、seedance-2-mini、happyhorse-1.1-i2v、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4
-  - 4K：seedance-2，最长 15 秒
-  - 30 秒：wan3.0-video、wan3.0-video-prime、seedance-2.5，最高 1080p
-  - 原生音频：wan2.7-i2v、minimax-h3
+- **图生视频** — 9 个模型（Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4
+  - 4K：Seedance 2.0，最长 15 秒
+  - 30 秒：Wan 3.0 Video、Wan 3.0 Video Prime、Seedance 2.5，最高 1080p
+  - 原生音频：Wan 2.7、MiniMax H3
 
 ## 为什么用 Beatra，而不是直接调用模型 API
 
-- **一个账号用到本 skill 的全部模型** — 文生图 10；图生图 10；图片编辑 6；图生视频 9（截至 2026-10-16），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
+- **一个账号用到本 skill 的全部模型** — 文生图 10；图生图 10；图片编辑 6；图生视频 9（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）（截至 2026-10-18），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
 - **花不花钱由你决定** — 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费。
 - **先策划，再生成** — skill 先帮你规划、指导和检查，再在 Beatra 上生成。
 - **文件可以核验** — `skills/` 下的每个文件都与 cdn.beatra.ai 上的发布归档逐字节一致，每次推送前用 SHA-256 校验。
 - **更新由你掌控** — 不含自更新程序；用安装时的工具更新。
-- **在你的 Agent 里运行** — Claude Code、Codex、OpenClaw。
+- **在你的 Agent 里运行** — Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw。
 
 ## 与同类方案对比
 
-| | Beatra（本 skill） | [wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) | [black-forest-labs/skills](https://github.com/black-forest-labs/skills) |
-| --- | --- | --- | --- |
-| 需要的账号或 key | 一个 Beatra 账号，不需要各家模型的 key | 自备 OPENAI_API_KEY（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L338)） | BFL API key（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L160-L166)） |
-| 模型 | 文生图 10；图生图 10；图片编辑 6；图生视频 9 | OpenAI GPT Image 2、GPT Image 2.5 Flare 与 Sunburst（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L154-L160)） | FLUX.2 与 FLUX.1 系列模型（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L127-L137)） |
-| 花钱前 | 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费 | 换模型或增加出图数量前征得你同意；模型不明确时先确认；建议先出低画质草稿（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L162-L164)） | 列出各模型价格，如 FLUX.2 [klein] 每张 $0.014 起、[pro] 每百万像素 $0.03 起；[dev] 非商用免费（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L127-L135)） |
-| 支持的 Agent | Claude Code、Codex、OpenClaw | Claude Code、Codex、OpenClaw、Hermes Agent（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L39)） | 编程 Agent（skill 遵循 agentskills.io 规范）；另有 Claude Code 插件（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L16-L68)） |
-| 安装 | `npx skills add beatra-ai/ai-image-generator-skill` | Claude Code 插件市场，或 Codex 的 skill 安装器（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L219-L229)） | `npx skills add black-forest-labs/skills`（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L29)） |
-| 许可证 | MIT-0 | MIT（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/LICENSE)） | MIT（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/LICENSE)） |
-| 最近更新 | 随每次发布更新（v0.2.2） | 2026-09-30（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/commit/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f)） | 2026-08-26（[出处](https://github.com/black-forest-labs/skills/commit/8907d515b0ac270a988ec7a239add81ee13d6cba)） |
+| | Beatra（本 skill） | [ZeroLu/Ultimate-AI-Media-Generator-Skill](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill) | [wuyoscar/GPT-Image2-Skill](https://github.com/wuyoscar/GPT-Image2-Skill) | [black-forest-labs/skills](https://github.com/black-forest-labs/skills) |
+| --- | --- | --- | --- | --- |
+| 需要的账号或 key | 一个 Beatra 账号，不需要各家模型的 key | CyberBara API key，保存在 ~/.config/cyberbara/api_key（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L68-L76)） | 自备 OPENAI_API_KEY（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L338)） | BFL API key（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L160-L166)） |
+| 模型 | 文生图 10；图生图 10；图片编辑 6；图生视频 9（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5） | CyberBara 图片模型：Nano Banana 2、Nano Banana 2 Lite、Nano Banana Pro、GPT Image 2、Midjourney v7、Seedream 5 Pro（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L176-L181)） | OpenAI GPT Image 2、GPT Image 2.5 Flare 与 Sunburst（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L154-L160)） | FLUX.2 与 FLUX.1 系列模型（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L127-L137)） |
+| 花钱前 | 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费 | 提交前可用 `quote` 命令查询 `estimated_credits` 和 `can_afford`（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L105-L115)） | 换模型或增加出图数量前征得你同意；模型不明确时先确认；建议先出低画质草稿（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L162-L164)） | 列出各模型价格，如 FLUX.2 [klein] 每张 $0.014 起、[pro] 每百万像素 $0.03 起；[dev] 非商用免费（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L127-L135)） |
+| 支持的 Agent | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw | OpenClaw、Claude Code、Codex、Claude Cowork、Cursor、Antigravity（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L31-L36)） | Claude Code、Codex、OpenClaw、Hermes Agent（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L39)） | 编程 Agent（skill 遵循 agentskills.io 规范）；另有 Claude Code 插件（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L16-L68)） |
+| 安装 | `npx skills add beatra-ai/ai-image-generator-skill` | `npx skills add ZeroLu/Ultimate-AI-Media-Generator-Skill --all`（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L60)） | Claude Code 插件市场，或 Codex 的 skill 安装器（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/README.md#L219-L229)） | `npx skills add black-forest-labs/skills`（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L29)） |
+| 许可证 | MIT-0 | MIT（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/LICENSE)） | MIT（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/blob/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f/LICENSE)） | MIT（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/LICENSE)） |
+| 最近更新 | 随每次发布更新（v0.2.3） | 2026-09-08（[出处](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/commit/f28e58f2b9814b2056417377c46f34fd35219702)） | 2026-09-30（[出处](https://github.com/wuyoscar/GPT-Image2-Skill/commit/9f8aa1a44a4a5c0f5a5d6e45eed564b3e2d5b87f)） | 2026-08-26（[出处](https://github.com/black-forest-labs/skills/commit/8907d515b0ac270a988ec7a239add81ee13d6cba)） |
 
 事实核对于 2026-10-16。有误请到 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/issues) 提 issue。
 
