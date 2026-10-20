@@ -1,6 +1,8 @@
 # AI Image Generator Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [AI Video Generator Skill](https://github.com/beatra-ai/ai-video-generator-skill)
 
 Generate, compose, and edit product images, brand visuals, posters, social graphics, illustrations, and photo variations, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -54,6 +56,12 @@ Install the ai-image-generation-studio skill from https://github.com/beatra-ai/a
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="The generated pour-over set used as a reference for a new composition: a square overhead flat lay on linen with beans, a paper filter and a brass scoop. AI-generated with Beatra."></p>
 
 *The generated pour-over set used as a reference for a new composition: a square overhead flat lay on linen with beans, a paper filter and a brass scoop. AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Use ./pourover-set.png as the product reference and compose a square overhead flat lay on natural linen for a social post: the dripper, carafe, mug of coffee and sugar bowl with scattered beans, a paper filter and a brass scoop. Keep the set's shapes and glaze colors recognizable.
+```
 
 Prompt:
 

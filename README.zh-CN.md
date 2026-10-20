@@ -1,6 +1,8 @@
 # AI Image Generator Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [AI Video Generator Skill](https://github.com/beatra-ai/ai-video-generator-skill)
 
 生成、合成并编辑产品图、品牌视觉、海报、社交媒体配图、插画和照片的不同版本，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -52,6 +54,12 @@ gh skill install beatra-ai/ai-image-generator-skill ai-image-generation-studio
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="把生成的手冲套装作为参考图，重新构图成一张亚麻桌布上的方形俯拍平铺图，搭配咖啡豆、滤纸和黄铜量勺。由 Beatra AI 生成。"></p>
 
 *把生成的手冲套装作为参考图，重新构图成一张亚麻桌布上的方形俯拍平铺图，搭配咖啡豆、滤纸和黄铜量勺。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+以 ./pourover-set.png 为产品参考，做一张社交媒体用的正方形俯拍平铺图：亚麻布上摆滤杯、分享壶、装着咖啡的杯子和糖罐，再撒几颗咖啡豆、放一张滤纸和一把黄铜量勺。器具的形状和釉色要能认出来。
+```
 
 提示词：
 
