@@ -7,7 +7,7 @@
 商品画像、ブランドビジュアル、ポスター、SNS 画像、イラスト、写真のバリエーションを生成・合成・編集。Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw のどれからでもそのまま使えます。
 
 > [!IMPORTANT]
-> 生成には [Beatra](https://beatra.ai) アカウントが必要で、クレジットを消費します。スキル自体のインストールは無料です。
+> 生成には [Beatra](https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill) アカウントが必要で、クレジットを消費します。スキル自体のインストールは無料です。
 
 | 項目 | 内容 |
 | --- | --- |
@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.2.3 |
+| [`ai-image-generation-studio`](skills/ai-image-generation-studio) | [SKILL.md](skills/ai-image-generation-studio/SKILL.md) | 0.2.4 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-generation-studio) から自動的に公開されています。問題の報告はそちらへお願いします。
 
@@ -134,7 +134,7 @@ New composition for a square social media post. Image 1 is the product reference
 
 ## リンク
 
-- ウェブサイト — https://beatra.ai
-- ドキュメント — https://docs.beatra.ai
+- ウェブサイト — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill
+- ドキュメント — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill
 - コンソール — https://console.beatra.ai
 - AI エージェント向け — https://beatra.ai/llms.txt（インデックス）· https://beatra.ai/llms-full.txt（全スキルを 1 ファイルに）
