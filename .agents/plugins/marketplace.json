@@ -1,0 +1,20 @@
+{
+  "name": "ai-image-generator-skill",
+  "interface": {
+    "displayName": "AI Image Generator"
+  },
+  "plugins": [
+    {
+      "name": "ai-image-generation-studio",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}
