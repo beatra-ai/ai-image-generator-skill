@@ -62,6 +62,12 @@ copilot plugin install ai-image-generation-studio@ai-image-generator-skill
 gemini extensions install https://github.com/beatra-ai/ai-image-generator-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-generator-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -93,6 +99,15 @@ gh skill install beatra-ai/ai-image-generator-skill ai-image-generation-studio
 ```text
 New composition for a square social media post. Image 1 is the product reference: the sage-green ceramic pour-over dripper, the glass carafe, the sage-green mug and the speckled cream sugar bowl. Keep their shapes, glaze colors, speckled texture and proportions recognizable. Arrange them as a top-down overhead flat lay on a textured natural linen tablecloth: the dripper lying beside the carafe, the mug filled with black coffee seen from directly above, the sugar bowl, a small scattered line of whole coffee beans, a folded unbleached paper filter, and a brass coffee scoop. Soft even daylight from the upper left with gentle short shadows, calm balanced spacing between objects with breathing room around the edges, muted sage, cream, linen and warm brown palette, photoreal editorial product photography. No people, no hands, no text, no logos, no labels, no watermarks.
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：文字描述 | — | — |
+| **输入** | 图片：参考图或要修改的原图（可选） | JPG、PNG、WEBP | 单次最多 4 张 |
+| **输出** | 图片：生成或修改后的图片 | PNG | 单次最多 4 张；1K、2K、4K |
+| **输出** | 视频：以生成的图片为首帧的短视频（可选） | MP4 | — |
 
 ## 技术规格与输出限制
 
@@ -158,19 +173,19 @@ New composition for a square social media post. Image 1 is the product reference
 
 ### 可以使用我自己的照片或产品图吗？
 
-可以。一至四张已有图像可以按顺序引导新构图，也可以让第一张图作为需要修改的原图。生成的细节仍需检查。
+可以。一至四张已有图像可以按顺序引导新构图，也可以让第一张图作为需要修改的原图。
 
 ### 可以只修改图片的一部分吗？
 
-可以。局部修改会针对已有原图中的指定区域，再从主体、构图、文字和发布场景检查整张结果。
+可以。局部修改只改已有原图中的指定区域。
 
 ### 它使用哪些图像模型？
 
 它会根据图像目标、参考素材、画幅、出图数量和创作设置匹配当前模型，并在指名模型适合这些输入时沿用该选择。
 
-### 可以让一系列图片保持统一吗？
+### 系列图片怎么保持统一？
 
-可以在系列图片中复用所选方向、文字描述、参考图、主体特征、风格、标识位置和文字计划，再逐张检查视觉一致性。
+系列里的每张图都沿用同一方向、文字描述、参考图、主体特征、风格、标识位置和文字计划。
 
 ## 更新与安全
 
@@ -180,7 +195,9 @@ New composition for a square social media post. Image 1 is the product reference
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill)。
 
 ## 相关链接
 

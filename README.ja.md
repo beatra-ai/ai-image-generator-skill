@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/ai-image-generator-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-generator-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -93,6 +99,15 @@ https://github.com/beatra-ai/ai-image-generator-skill から ai-image-generation
 ```text
 New composition for a square social media post. Image 1 is the product reference: the sage-green ceramic pour-over dripper, the glass carafe, the sage-green mug and the speckled cream sugar bowl. Keep their shapes, glaze colors, speckled texture and proportions recognizable. Arrange them as a top-down overhead flat lay on a textured natural linen tablecloth: the dripper lying beside the carafe, the mug filled with black coffee seen from directly above, the sugar bowl, a small scattered line of whole coffee beans, a folded unbleached paper filter, and a brass coffee scoop. Soft even daylight from the upper left with gentle short shadows, calm balanced spacing between objects with breathing room around the edges, muted sage, cream, linen and warm brown palette, photoreal editorial product photography. No people, no hands, no text, no logos, no labels, no watermarks.
 ```
+
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：テキストで書いた画像の指示 | — | — |
+| **入力** | 画像：参考画像または編集する元画像（任意） | JPG、PNG、WEBP | 1 リクエストあたり最大 4 枚 |
+| **出力** | 画像：生成・編集した画像 | PNG | 1 リクエストあたり最大 4 枚／1K、2K、4K |
+| **出力** | 動画：生成した画像から始まる短い動画（任意） | MP4 | — |
 
 ## 技術仕様と出力上限
 
@@ -135,19 +150,19 @@ New composition for a square social media post. Image 1 is the product reference
 
 ### 自分の写真や商品画像を使えますか？
 
-はい。1〜4枚の画像を順番に使って新しい構図の参考にすることも、最初の画像を編集元として使うこともできます。生成された細部は確認が必要です。
+はい。1〜4枚の画像を順番に使って新しい構図の参考にすることも、最初の画像を編集元として使うこともできます。
 
 ### 画像の一部だけを変更できますか？
 
-はい。既存の元画像で範囲を指定して部分編集し、被写体、構図、文字、用途の観点から画像全体も確認します。
+はい。既存の元画像で範囲を指定し、その部分だけを編集します。
 
 ### どの画像モデルを使いますか？
 
-作りたい画像、参考素材、キャンバス、出力条件に合う現在のモデルを確認します。指定モデルが適合する場合はその選択を使い、適合する候補を明確にして制作方向を決めます。
+作りたい画像、参考素材、キャンバス、出力条件に合う現在のモデルを選びます。指定したモデルが条件に合えば、そのモデルを使います。
 
-### シリーズ画像の統一感を保てますか？
+### シリーズ画像はどうやって統一しますか？
 
-選んだ方向、文章、参考画像、被写体の特徴、スタイル、ロゴ位置、文字設計をシリーズで再利用し、各画像の統一感を確認します。
+シリーズのどの画像にも、同じ方向性、文章、参考画像、被写体の特徴、スタイル、ロゴ位置、文字設計を使います。
 
 ## 更新とセキュリティ
 
@@ -157,7 +172,9 @@ New composition for a square social media post. Image 1 is the product reference
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill)が適用されます。
 
 ## リンク
 

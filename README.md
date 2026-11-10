@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/ai-image-generator-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-generator-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -95,6 +101,15 @@ Prompt:
 ```text
 New composition for a square social media post. Image 1 is the product reference: the sage-green ceramic pour-over dripper, the glass carafe, the sage-green mug and the speckled cream sugar bowl. Keep their shapes, glaze colors, speckled texture and proportions recognizable. Arrange them as a top-down overhead flat lay on a textured natural linen tablecloth: the dripper lying beside the carafe, the mug filled with black coffee seen from directly above, the sugar bowl, a small scattered line of whole coffee beans, a folded unbleached paper filter, and a brass coffee scoop. Soft even daylight from the upper left with gentle short shadows, calm balanced spacing between objects with breathing room around the edges, muted sage, cream, linen and warm brown palette, photoreal editorial product photography. No people, no hands, no text, no logos, no labels, no watermarks.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — Written image brief | — | — |
+| **Input** | Image — Reference images or a base image to edit (optional) | JPG, PNG, WEBP | up to 4 images per request |
+| **Output** | Image — Generated or edited images | PNG | up to 4 images per request; 1K, 2K, 4K |
+| **Output** | Video — Short clip that starts from a generated image (optional) | MP4 | — |
 
 ## Technical Specifications & Output Limits
 
@@ -160,19 +175,19 @@ It can create product images, ad creative, brand visuals, posters, social graphi
 
 ### Can it use my own photos or product images?
 
-Yes. One to four supplied images can guide a new composition, or the first supplied image can remain the base for an edit. Generated details still need review.
+Yes. One to four supplied images can guide a new composition, or the first supplied image can remain the base for an edit.
 
 ### Can it change only part of an image?
 
-Yes. A focused edit targets a defined area of an existing base image, then reviews the whole result for subject, composition, text, and destination fit.
+Yes. A focused edit changes only a defined area of an existing base image.
 
 ### Which image models does it use?
 
 It matches the image goal, reference materials, canvas, output count, and creative controls with current models, and keeps a named model when it fits those inputs.
 
-### Can it keep a series consistent?
+### How is a series made to match?
 
-It reuses the selected direction, wording, reference images, subject cues, style, logo placement, and text plan across the series, then reviews each result for visual consistency.
+Every image in the series reuses the same direction, wording, reference images, subject cues, style, logo placement, and text plan.
 
 ## Updates and security
 
@@ -183,9 +198,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-generator-skill).
 
 ## Links
 

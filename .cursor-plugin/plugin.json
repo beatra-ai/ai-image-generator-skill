@@ -9,5 +9,19 @@
   "homepage": "https://beatra.ai/skills/ai-image-generation-studio",
   "repository": "https://github.com/beatra-ai/ai-image-generator-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI image generator",
+    "text to image",
+    "AI image editor",
+    "AI product photo",
+    "product image generator",
+    "AI poster maker",
+    "brand visual generator",
+    "social media image generator",
+    "AI illustration generator",
+    "concept art generator",
+    "photo background editor",
+    "AI image studio"
+  ],
   "logo": "assets/icon.png"
 }
